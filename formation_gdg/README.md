@@ -27,3 +27,7 @@ while MediaQuery returns the actual orientation of the device.
 - When u provide different widgets , when it overflows the width of screen, it returns automatically to a new line and starts the new widget provided
 ## Stack Widget:
 - Used to put a widget on top of another widget
+
+## MediaQuery.padding vs MediaQuery.viewPadding
+- these two fields are used to give u the space taken by things that are out of ur widget tree, for example the status bar, padding.top or viewPadding.top gives u the height of the status bar,
+- the only difference between viewPadding and padding is that padding becomes 0 when a keyboard appears on screen while viewPadding keeps it's original one.
