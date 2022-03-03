@@ -1,12 +1,29 @@
 # formation_gdg
 
-A new Flutter project.
 
-## Getting Started
+## NestedScrollView vs CustomScrollView
 
-This project is a starting point for a Flutter application.
+- per docs, NestedScrollView is generally used with a TabBarView while customScrollView is used for all scrollable screens in flutter, what I mean TabBarView is when u want to provide different tabs to ur flutter app and navigate to each one by clicking on items provided in root screen.
 
-A few resources to get you started if this is your first Flutter project:
+## Expanded vs Flexible
+A flexible widget takes only the the space needed by it's child while expanded widget takes all the available space, although u can change property of flexible to make it function like an expanded widget.
+
+## Steps into creating a TabBarView
+- Provide a tab controller.
+- Provide different tabs as a child of TabBar(which is placed in the desired position of screen).
+- Provide a TabBarView and give it ur different tabs design.
+
+## LayoutBuilder vs MediaQuery.of(context).size.height (or width)
+- Layout builder takes only the available space and put it to use, while mediaquery provides all the available height and width into the device screen including, for example the status bar height(bar li fiha icons t3 wifi etc f top ).
+
+## OrientationBuilder vs MediaQuery.of(context).orientation
+-Orientation builder gives u the orientation of parent widget while mediaquery gives u orientation of device being used:
+for example if Orientation builder has as parent widget a container in which width>height then it returns : Orientation.landscape , else it returns portrait
+while MediaQuery returns the actual orientation of the device.
+
+#### CustomScrollView
+- Always use slivers as children, u can't provide non sliver widgets as Container,padding etc..
+
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
