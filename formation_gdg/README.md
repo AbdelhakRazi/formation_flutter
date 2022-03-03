@@ -1,4 +1,4 @@
-# formation_gdg
+# Flutter Session 4
 
 
 ## NestedScrollView vs CustomScrollView
@@ -23,11 +23,7 @@ while MediaQuery returns the actual orientation of the device.
 
 #### CustomScrollView
 - Always use slivers as children, u can't provide non sliver widgets as Container,padding etc..
-
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Wrap Widget:
+- When u provide different widgets , when it overflows the width of screen, it returns automatically to a new line and starts the new widget provided
+## Stack Widget:
+- Used to put a widget on top of another widget
